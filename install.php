@@ -1,7 +1,7 @@
 <?php
 $tips = 'Please enter a 6-9 digit password:';
 
-if(is_null($argv[1])){
+if(empty($argv[1])){
     $key = random_int(10000000,99999999);
     $key = getInput("$tips default [{$key}]:", $key);
 }else{
